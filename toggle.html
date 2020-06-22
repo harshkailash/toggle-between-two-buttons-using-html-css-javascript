@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="css/button.css">
+    <title>Css 27-01-2020</title>
+    <script type="text/javascript">
+      function SignIn()
+      {
+        document.getElementById('up').style="display:none";
+        document.getElementById('in').style="display:block";
+      }
+      function SignUp()
+      {
+        document.getElementById('in').style="display:none";
+        document.getElementById('up').style="display:block";
+      }
+    </script>
+  </head>
+  <body>
+  	
+  <div align=center>
+  <img src="images/1.png">
+  </div>
+    <div class="main" align="center" border="50%">
+    <input type="button" name="sin" value="SignIn" onclick="javascript:SignIn()">&nbsp&nbsp
+    <input type="button" name="sin" value="SignUp" onclick="javascript:SignUp()">
+  </div>
+  <br>
+  <form class="a" action="css/styles.css">
+    <div id="in" class="in" style="display:none" align=center borer="50%">
+      <br>
+      <label for="uid">UserID:&nbsp&nbsp&nbsp</label><input type="text" name="uid"><br><br>
+      <label for="pwd">Password:</label><input type="password" name="pwd"><br><br>
+      <input type="submit" name="continue"><br><br>
+    </div>
+    <div id="up" class="up" style="display:none" align=center>
+      <br>
+      <label for="name">Name:&nbsp&nbsp&nbsp&nbsp</label><input type="text" name="uid"><br><br>
+      <label for="uid">UserID:&nbsp&nbsp&nbsp</label><input type="text" name="uid"><br><br>
+      <label for="pwd">Password:</label><input type="password" name="pwd"><br><br>
+      <input type="submit" name="proceed"><br>
+    </div>
+  </form>
+  </body>
+</html>
